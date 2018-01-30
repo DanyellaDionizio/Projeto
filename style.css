@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.fundo{
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #00BFFF);
+    height: 800px;
+    width: 100%;
+    display: block
+}
+
+.alinhamento{
+    padding-top: 100px;
+}
