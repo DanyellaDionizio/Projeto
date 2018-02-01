@@ -4,12 +4,27 @@
 }
 
 nav{
-    background-color: rgba(0,0,0, 0.6);
-    height: 105px;
+    background: linear-gradient(to top, #ffffff, palegreen);
+    height: 50px;
     position: fixed;
     z-index: 1;
     width: 100%;
 }
 
+.navbar-inverse{
+    border-color: transparent;
+    border-style: none;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: #000000;
+    text-shadow: 1px 1px grey; 
+}
 
 
+
+@media (min-widht: 1080px)
+    .navbar-inverse .navbar-nav>li>a{
+        background: transparent;
+        text-shadow: 1px 1px grey; 
+}
