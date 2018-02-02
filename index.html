@@ -26,18 +26,26 @@
 
             <div>
               <ul class="nav navbar-nav navbar-right indice">
-                <li><a class="nav-link js-scroll-trigger" href="#inicio"> Home </a></li>
-                <li><a class="nav-link js-scroll-trigger" href="#about"> Sobre </a></li>
+                <li><a class="nav-link js-scroll-trigger data-toggle="tooltip" title="TESTE HOME" " href="#inicio"> Home </a></li>
+                <li><a class="nav-link js-scroll-trigger  data-toggle="popover" title="TESTE SOBRE" data-content="ESPERO QUE DE CERTO !" " href="#about"> Sobre </a></li>
                 <li><a class="nav-link js-scroll-trigger"  href="#down"> Download </a></li>
                 <li><a class="nav-link js-scroll-trigger"  href="#"> | </a></li>
-                <li><a href="#sign"> Cadastrar </a></li>
+              
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastrar
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="template/formularioCadastroMedico.html">Médico</a></li>
+                      <li><a href="template/formularioCadastroPaciente.html">Paciente</a></li>
+                    </ul>
 
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Entrar
                     <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Médico</a></li>
-                      <li><a href="#">Paciente</a></li>
+                      <li><a href="template/loginMedico.html">Médico</a></li>
+                      <li><a href="template/loginPaciente.html">Paciente</a></li>
+                </li>
               </ul>
             </div>
           </nav>     
@@ -57,6 +65,9 @@
         
     <section id="about" class="sobre">
       <h1>Sobre</h1>
+      <div class="quadrado">
+        TESTE
+      </div>
 
     </section>
 

@@ -33,6 +33,10 @@ header{
   
 }
 
+.fundo{
+    background: -o-repeating-linear-gradient(to left, #000000, red);
+}
+
 .texto-inicio{
     position: absolute;
     top: 150px;
@@ -58,6 +62,12 @@ header{
     background-color: rgb(96, 231, 103);
 	width: 100%;
 	height: 80%;
+}
+
+.quadrado{
+    width: 10px;
+    height: 10px;
+    color: red;
 }
 
 .download{
