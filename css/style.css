@@ -33,6 +33,7 @@ header{
   
 }
 
+<<<<<<< HEAD
 .fundo{
     background: -o-repeating-linear-gradient(to left, #000000, red);
 }
@@ -48,6 +49,8 @@ header{
 
 
 
+=======
+>>>>>>> 96d14a11db213617811b5726c1309fe0e0b09974
 .mySlides {
     display: flex;
     height: 700px;
@@ -56,20 +59,35 @@ header{
     
 }
 
-.sobre{
+section{
     margin-top: -20px;
     background: linear-gradient(to top, #ffffff, rgb(105, 243, 190));
     background-color: rgb(96, 231, 103);
 	width: 100%;
-	height: 80%;
+    height: 80%;
+
 }
 
+<<<<<<< HEAD
 .quadrado{
     width: 10px;
     height: 10px;
     color: red;
 }
 
+=======
+section h1{
+    
+        position: absolute;
+        top: 150px;
+        left: 50px;
+        width: 300px;
+        text-overflow: clip;
+}
+
+
+
+>>>>>>> 96d14a11db213617811b5726c1309fe0e0b09974
 .download{
     margin-top: -20px;
     background: linear-gradient(to top, #ffffff,  palegreen);
