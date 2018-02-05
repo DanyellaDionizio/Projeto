@@ -41,11 +41,9 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Entrar
                         <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                        <!-- <li><a href="template/loginMedico.html">Médico</a></li>
-                        <li><a href="template/loginPaciente.html">Paciente</a></li> -->
                         
-                        <li><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Médico</a></li>
-                        <li><a href="#">Paciente</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#acessoMedico">Médico</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#acessoPaciente">Paciente</a></li>
                     </li>
                 </ul>
                 </div>
@@ -90,7 +88,7 @@
 
         <section id="down" class="download">
             <div class="container">
-                <h2 class="center">faça o download aqui!</h2>
+                <h2 class="center">Faça o download aqui!</h2>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
                         <img src="img/google-play-badge.svg" alt="Google Play">
@@ -114,46 +112,87 @@
             </div>    
         </footer>
 
-        <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+        <!--Modal Acesso Médico-->
+        <div class="modal fade" id="acessoMedico" tabindex="-1" role="dialog" aria-labelledby="acessoMedicoLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="acessoMedicoLabel">Acesso Médico</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="medicoNome">Nome Completo:</label>
+                                <input type="text" class="form-control" id="medicoNome" placeholder="Nome completo do paciente">
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="medicoDataNascimento">Data Nascimento:</label>
+                                <input type="text" class="form-control" id="medicoDataNascimento" placeholder="Data de nascimento do paciente">
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="medicoCPF">CPF:</label>
+                                <input type="text" class="form-control" id="medicoCPF" placeholder="4 ultimos digitos do CPF">
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="medicoEmail">E-mail:</label>
+                                <input type="email" class="form-control" id="medicoEmail" placeholder="e-mail medico">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                    <div id="AcessoMedico">	
-                            <div id="Nome">
-                                <input type="text" placeholder="Nome completo do paciente">
-                            </div>
-                
-                            <div id="Data">
-                                <input type="text" placeholder="Data de nascimento do paciente">
-                            </div>
-                
-                            <div id="CPF">
-                                <input type="password" placeholder="4 ultimos digitos do CPF">
-                            </div>
-                
-                            <div id="Email">
-                                <input type="email" placeholder="e-mail medico">
-                            </div>
-                
-                            <div id="BotaoMedico">
-                                <button>TESTE MEDICO</button>
-                            </div>
-                        </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <!--Modal Acesso Paciente-->
+        <div class="modal fade" id="acessoPaciente" tabindex="-1" role="dialog" aria-labelledby="acessoPacienteLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="acessoPacienteLabel">Acesso Paciente</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="pacienteNome">Nome Completo:</label>
+                                    <input type="text" class="form-control" id="pacienteNome" placeholder="Nome completo do paciente">
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="pacienteDataNascimento">Data Nascimento:</label>
+                                    <input type="text" class="form-control" id="pacienteDataNascimento" placeholder="Data de nascimento do paciente">
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="pacienteCPF">CPF:</label>
+                                    <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label for="pacienteEmail">E-mail:</label>
+                                    <input type="email" class="form-control" id="pacienteEmail" placeholder="e-mail medico">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
