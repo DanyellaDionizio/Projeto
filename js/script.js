@@ -1,12 +1,14 @@
  var myIndex = 0;
-      carousel();
+
+ [18:51, 5/2/2018] Dani Curso Programacao: $('.carousel').carousel()
+    //   carousel();
       
-      function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";  
-          }
+    //   function carousel() {
+    //       var i;
+    //       var x = document.getElementsByClassName("mySlides");
+    //       for (i = 0; i < x.length; i++) {
+    //          x[i].style.display = "none";  
+    //       }
           myIndex++;
           if (myIndex > x.length) {myIndex = 1}    
           x[myIndex-1].style.display = "block";  
