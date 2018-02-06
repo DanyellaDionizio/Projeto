@@ -236,62 +236,118 @@
             </div>
 
             <!--Modal Cadastro Paciente-->
-        <div class="modal fade" id="cadastroPaciente" tabindex="-1" role="dialog" aria-labelledby="cadastroPacienteLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="cadastroPacienteLabel">Cadastro Paciente</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="pacienteNome">Nome Completo:</label>
-                                <input type="text" class="form-control" id="pacienteNome" placeholder="Nome completo do paciente">
-                            </div>
-                
-                            <div class="form-group">
-                                <label for="pacienteDataNascimento">Data Nascimento:</label>
-                                <input type="text" class="form-control" id="pacienteDataNascimento" placeholder="Data de nascimento do paciente">
-                            </div>
-                
-                            <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>
-                            <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>
-                            <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>                            <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>                            <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>                            <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>                            <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Cadastrar</button>
+            <div class="modal fade" id="cadastroPaciente" tabindex="-1" role="dialog" aria-labelledby="cadastroPacienteLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="cadastroPacienteLabel">Cadastro Paciente</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <P id="dadosPessoais">Dados Pessoais</P>
+                            <form class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="pacienteNome">Nome Completo:</label>
+                                    <input type="text" class="form-control" id="pacienteNome" placeholder="Nome completo do paciente">
+                                </div>  
+                                <div class="form-group col-md-4">
+                                    <label for="pacienteRG">RG:</label>
+                                    <input type="text" class="form-control" id="pacienteRG" placeholder="RG">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="pacienteCPF">CPF:</label>
+                                    <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF, só número">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="pacienteCartaoSUS">C. SUS:</label>
+                                    <input type="text" class="form-control" id="pacienteRG" placeholder="Cartão do SUS">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="pacienteDataNascimento">Data Nascimento:</label>
+                                    <input type="text" class="form-control" id="pacienteDataNascimento" placeholder="Data de nascimento do paciente">
+                                </div>               
+                                <div class="form-group col-md-6">
+                                    <label for="pacienteIdade">Idade:</label>
+                                    <input type="text" class="form-control" id="pacienteIdade" placeholder="Idade">
+                                </div>                
+                                <div class="form-group col-md-12">
+                                    <label for="pacienteCEP">CEP:</label>
+                                    <input type="text" class="form-control" id="pacienteCEP" placeholder="CEP da rua onde mora">
+                                </div>    
+                                <div class="form-group col-md-10">
+                                    <label for="pacienteEndereço">Endereço:</label>
+                                    <input type="text" class="form-control" id="pacienteEndereço" placeholder="Endereço onde mora">
+                                </div> 
+                                <div class="form-group col-md-2">
+                                    <label for="pacienteNumero">Nº:</label>
+                                    <input type="text" class="form-control" id="pacienteNumero" placeholder="Número">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="pacienteComplementoo">Complemento:</label>
+                                    <input type="text" class="form-control" id="pacienteComplemento" placeholder="Ap. Casa">
+                                </div>                          
+                                <div class="form-group col-md-4">
+                                    <label for="pacienteBairro">Barirro:</label>
+                                    <input type="text" class="form-control" id="pacienteBairro" placeholder="Bairro onnde mora">
+                                </div>                            
+                                <div class="form-group col-md-4">
+                                    <label for="pacienteCidade">Cidade:</label>
+                                    <input type="text" class="form-control" id="pacienteCidade" placeholder="Cidade onde Mora">
+                                </div>    
+                                <div class="form-group col-md-4">
+                                    <label for="pacienteEstado">Estado:</label>
+                                    <input type="text" class="form-control" id="pacienteEstado" placeholder="Estado">
+                                </div>  
+                                <div class="form-group col-md-6">
+                                    <label for="pacienteNacionalidade">Nacionalidade:</label>
+                                    <input type="text" class="form-control" id="pacienteNacionalidade" placeholder="País onde Nasceu">
+                                </div>            
+                                <div class="form-group col-md-6">
+                                    <label for="pacienteCPF">Naturalidade:</label>
+                                    <input type="text" class="form-control" id="pacienteNaturalidade" placeholder="Cidade onde Nasceu">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="pacienteTelefoneRes">Telefone Res.:</label>
+                                    <input type="text" class="form-control" id="pacienteTelefoneRes" placeholder="Telefone Residencial">
+                                </div>    
+                                <div class="form-group col-md-4">
+                                    <label for="pacienteTelefoneComercial">Comercial:</label>
+                                    <input type="text" class="form-control" id="pacienteTelefoneComercial" placeholder="Comercial">
+                                </div>      
+                                <div class="form-group col-md-4">
+                                    <label for="pacienteTelefoneCelular">Celular:</label>
+                                    <input type="text" class="form-control" id="pacienteTelefoneCelular" placeholder="Celular" required>
+                                </div>        
+    
+                                <!-- <p>
+                                    --------------------------------------------------------------------------------------
+                                </p> -->   
+                                <div class="form-group">
+                                    <label for="pacienteEtnia">Etnia:</label>
+                                    <input type="text" class="form-control" id="pacienteEtnia" placeholder="Bairro onnde mora">
+                                </div>                      
+                                <div class="form-group">
+                                    <label for="pacienteSexo">Sexo:</label>
+                                    <input type="text" class="form-control" id="pacienteSexo" placeholder="Sexo">
+                                </div>                                                                                                    
+                                <div class="form-group">
+                                    <label for="pacienteEmail">E-mail:</label>
+                                    <input type="text" class="form-control" id="pacienteEmail" placeholder="Email">
+                                </div>                            
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <!-- <button type="button" class="btn btn-primary">Cadastrar</button> -->
+                        <input type="submit">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!--Modal Cadastro Médico-->
+    
+            <!--Modal Cadastro Médico-->
         <div class="modal fade" id="cadastroMedico" tabindex="-1" role="dialog" aria-labelledby="cadastroMedicoLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
