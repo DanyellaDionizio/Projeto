@@ -246,46 +246,100 @@
                     </button>
                     </div>
                     <div class="modal-body">
-                        <form>
-                            <div class="form-group">
+                        <P id="dadosPessoais">Dados Pessoais</P>
+                        <form action="#">
+                            <div class="form-group col-md-12">
                                 <label for="pacienteNome">Nome Completo:</label>
-                                <input type="text" class="form-control" id="pacienteNome" placeholder="Nome completo do paciente">
+                                <input type="text" class="form-control" name="pacienteNome" id="pacienteNome" placeholder="Nome completo do paciente">
+                            </div>  
+                            <div class="form-group col-md-4">
+                                <label for="pacienteRG">RG:</label>
+                                <input type="text" class="form-control" name="pacienteRG" id="pacienteRG" placeholder="RG">
                             </div>
-                
-                            <div class="form-group">
+                            <div class="form-group col-md-4">
+                                <label for="pacienteCPF">CPF:</label>
+                                <input type="text" class="form-control" name="pacienteCPF" id="pacienteCPF" placeholder="4 ultimos digitos do CPF, só número">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="pacienteCartaoSUS">C. SUS:</label>
+                                <input type="text" class="form-control" name="pacienteCartaoSUS" id="pacienteCartaoSUS" placeholder="Cartão do SUS">
+                            </div>
+                            <div class="form-group col-md-6">
                                 <label for="pacienteDataNascimento">Data Nascimento:</label>
-                                <input type="text" class="form-control" id="pacienteDataNascimento" placeholder="Data de nascimento do paciente">
+                                <input type="date" class="form-control" name="pacienteDataNascimento" id="pacienteDataNascimento" placeholder="Data de nascimento do paciente">
+                            </div>               
+                            <div class="form-group col-md-6">
+                                <label for="pacienteIdade">Idade:</label>
+                                <input type="text" class="form-control" name="pacienteIdade" id="pacienteIdade" placeholder="Idade">
+                            </div>                
+                            <div class="form-group col-md-12">
+                                <label for="pacienteCEP">CEP:</label>
+                                <input type="text" class="form-control" name="pacienteCEP" id="pacienteCEP" placeholder="CEP da rua onde mora">
+                            </div>    
+                            <div class="form-group col-md-8">
+                                <label for="pacienteEndereço">Endereço:</label>
+                                <input type="text" class="form-control" name="pacienteEndereco" id="pacienteEndereco" placeholder="Endereço onde mora">
+                            </div> 
+                            <div class="form-group col-md-4">
+                                <label for="pacienteNumero">Nº:</label>
+                                <input type="text" class="form-control" name="pacienteNumero" id="pacienteNumero" placeholder="Número">
                             </div>
-                
+                            <div class="form-group col-md-12">
+                                <label for="pacienteComplementoo">Complemento:</label>
+                                <input type="text" class="form-control" name="pacienteComplemento" id="pacienteComplemento" placeholder="Ap. Casa">
+                            </div>                          
+                            <div class="form-group col-md-4">
+                                <label for="pacienteBairro">Barirro:</label>
+                                <input type="text" class="form-control" name="pacienteBairro" id="pacienteBairro" placeholder="Bairro onnde mora">
+                            </div>                            
+                            <div class="form-group col-md-4">
+                                <label for="pacienteCidade">Cidade:</label>
+                                <input type="text" class="form-control" name="pacienteCidade" id="pacienteCidade" placeholder="Cidade onde Mora">
+                            </div>    
+                            <div class="form-group col-md-4">
+                                <label for="pacienteEstado">Estado:</label>
+                                <input type="text" class="form-control" name="pacienteEstado" id="pacienteEstado" placeholder="Estado">
+                            </div>  
+                            <div class="form-group col-md-6">
+                                <label for="pacienteNacionalidade">Nacionalidade:</label>
+                                <input type="text" class="form-control" name="pacienteNacionalidade" id="pacienteNacionalidade" placeholder="País onde Nasceu">
+                            </div>            
+                            <div class="form-group col-md-6">
+                                <label for="pacienteCPF">Naturalidade:</label>
+                                <input type="text" class="form-control" name="pacienteNaturalidade" id="pacienteNaturalidade" placeholder="Cidade onde Nasceu">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="pacienteTelefoneRes">Telefone Res.:</label>
+                                <input type="text" class="form-control" name="pacienteTelefoneRes" id="pacienteTelefoneRes" placeholder="Telefone Residencial" required pattern="^[0-9]{8,11}$">
+                            </div>    
+                            <div class="form-group col-md-4">
+                                <label for="pacienteTelefoneComercial">Comercial:</label>
+                                <input type="text" class="form-control" name="pacienteTefoneComercial" id="pacienteTelefoneComercial" placeholder="Comercial">
+                            </div>      
+                            <div class="form-group col-md-4">
+                                <label for="pacienteTelefoneCelular">Celular:</label>
+                                <input type="text" class="form-control" name="pacienteTelefoneRes" id="pacienteTelefoneCelular" placeholder="Celular" required>
+                            </div>        
+
+                            <!-- <p>
+                                --------------------------------------------------------------------------------------
+                            </p> -->   
                             <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>
+                                <label for="pacienteEtnia">Etnia:</label>
+                                <input type="text" class="form-control" id="pacienteEtnia" placeholder="Bairro onnde mora">
+                            </div>                      
                             <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>
+                                <label for="pacienteSexo">Sexo:</label>
+                                <input type="text" class="form-control" id="pacienteSexo" placeholder="Sexo">
+                            </div>                                                                                                    
                             <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>                            <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>                            <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>                            <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>                            <div class="form-group">
-                                <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
+                                <label for="pacienteEmail">E-mail:</label>
+                                <input type="text" class="form-control" id="pacienteEmail" placeholder="Email">
                             </div>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                                        
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Cadastrar</button>
                     </div>
                 </div>
             </div>
