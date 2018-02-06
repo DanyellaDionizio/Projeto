@@ -47,9 +47,6 @@ header{
 
 }
 
-/* .mySlides {
-    display: flex;    
-} */
 
 section{
     margin-top: -20px;
@@ -115,8 +112,11 @@ footer ul li {
 }
 
 
-/* @media (min-widht: 1080px)
-    navbar-inverse .navbar-nav>li>a{
-        background: transparent;
-        text-shadow: 1px 1px grey; 
-    }
+#cadastroPaciente .modal-body{
+    background: linear-gradient(to top, #ffffff,  palegreen);
+    background-color: rgb(96, 231, 103);
+	width: 100%;
+}
+
+
+}
