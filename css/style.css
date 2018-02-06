@@ -5,10 +5,11 @@ html{
 }
 
 nav{
-    background-color: transparent;
+    background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+    background-color: (rgb(0, 160, 255));
     height: 70px;
     position: fixed;
-    z-index: 1;
+    z-index: 16;
     width: 100%;
 }
 
@@ -20,22 +21,18 @@ nav{
 
 .navbar-inverse .navbar-nav>li>a{
     font-size: 18px;
-    color: rgb(24, 161, 109);
-    text-shadow: 1px 1px blue; 
+    color: rgb(8, 81, 190);
+/
 }
 
 header{
-	background: linear-gradient(to bottom, #ffffff, rgb(105, 243, 190));
-    background-color: rgb(96, 231, 186);
+	background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+    background-color: (rgb(0, 160, 255));
 	width: 100%;
     height: 100%;
     max-height: 700px;
     margin-top:20px;
   
-}
-
-.fundo{
-    background: -o-repeating-linear-gradient(to left, #000000, red);
 }
 
 .texto-inicio{
@@ -47,23 +44,18 @@ header{
 
 }
 
-
 section{
     margin-top: -20px;
-    background: linear-gradient(to top, #ffffff, rgb(105, 243, 190));
-    background-color: rgb(96, 231, 103);
+    background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+    background-color: (rgb(0, 160, 255));
 	width: 100%;
 }
 
 .sobre {
     position: relative;
     padding: 50px 0px;
-}
-
-.quadrado{
-    width: 10px;
-    height: 10px;
-    color: red;
+    color: rgb(8, 81, 190);
+    
 }
 
 section h1{
@@ -77,8 +69,8 @@ section h1{
 
 .download{
     padding: 50px 0px;
-    background: linear-gradient(to top, #ffffff,  palegreen);
-    background-color: rgb(96, 231, 103);
+    background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+    background-color: (rgb(0, 160, 255));
 	width: 100%;
 }
 
@@ -94,7 +86,8 @@ section h1{
 }
 
 footer{
-	background: linear-gradient( to top,  rgba(54, 105, 54, 0.836), rgba(152, 251, 152, 0.637)); 
+	background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+    background-color: (rgb(0, 160, 255));
 	width: 100%;
 	height: 50px;
 }
@@ -113,15 +106,29 @@ footer ul li {
 
 
 #cadastroPaciente .modal-body{
-    background: linear-gradient(to top, #ffffff,  palegreen);
-    background-color: rgb(96, 231, 125);
+    background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+    background-color: (rgb(0, 160, 255));
 	width: 100%;
 }
 
-#cadastroPacienteLabel{
-    text-align: center;
-    font-size: 30px; 
-    font-weight: bold;
+.carousel-tamanho{
+    width: 60%;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+}
+
+.texto-plataforma{
+    width: 30%;
+    position: absolute;
+    top:80px;
+    right:40px;
+    color: #ffffff;
+}
+
+.simGif{
+    margin: auto;
+    width: 210px;
 }
 
 #dadosPessoais{

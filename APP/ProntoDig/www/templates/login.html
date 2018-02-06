@@ -1,0 +1,32 @@
+<ion-view view-title="Login">
+    <ion-content class="padding">
+  
+        <img class="full-image" src="/img/Sim.gif" width="10" height="300" alt="">
+
+            <div ng-hide="mostrarPac">
+                <button class="button button-block button-positive" ng-click="entrarMedico()"> Médico</button>  
+                    <div ng-show="mostrarMed">
+                        <input type="text" placeholder="Nome do Paciente">
+                        <input type="text" placeholder="Data de nascimento">
+                        <input type="number" placeholder="4 ultimos digitos do CPF">
+                        <input type="email" placeholder="e-mail do Médico">
+                        <button class="button button-block button-positive" ng-click="">Entrar</button>
+            
+                    </div>
+            </div>
+            <div ng-hide="mostrarMed">
+                <button class="button button-block button-positive" ng-click="entrarPaciente()" > Paciente</button>
+                    <div ng-show="mostrarPac">
+                            <input type="text" placeholder="Nome do Paciente">
+                            <input type="text" placeholder="Data de nascimento">
+                            <input type="number" placeholder="4 ultimos digitos do CPF">
+                            <button class="button button-block button-positive" ng-click="">Entrar</button>
+            
+                    </div>
+            </div>
+            <button class="button button-full button-light" ng-click="paginaCadastro()"> Cadastrar</button>
+
+
+
+    </ion-content>
+  </ion-view>
