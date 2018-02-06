@@ -42,12 +42,18 @@ angular.module('starter.controllers', [])
 
   $scope.mostrarMed = false;
   $scope.entrarMedico = () => {
-      $scope.mostrarMed = true;
+      $scope.mostrarMed = !$scope.mostrarMed;
+      $scope.mostrarPac = false;
+  }
+
+  $scope.esconderMed = () => {
+    $scope.entrarPaciente = true;
   }
 
   $scope.mostrarPac = false;
   $scope.entrarPaciente = () => {
-      $scope.mostrarPac = true;
+      $scope.mostrarPac = !$scope.mostrarPac;
+      $scope.mostrarMed = false;
   }
 
-})
+});
