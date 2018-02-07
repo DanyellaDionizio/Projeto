@@ -22,7 +22,6 @@ nav{
 .navbar-inverse .navbar-nav>li>a{
     font-size: 18px;
     color: rgb(8, 81, 190);
-/
 }
 
 header{
@@ -110,6 +109,11 @@ footer ul li {
     background-color: (rgb(0, 160, 255));
 	width: 100%;
 }
+#cadastroMedico .modal-body{
+    background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+    background-color: (rgb(0, 160, 255));
+	width: 100%;
+}
 
 .carousel-tamanho{
     width: 60%;
@@ -132,7 +136,37 @@ footer ul li {
 }
 
 #dadosPessoais{
+    text-align: ;
+    font-size: 15px;
+    font-weight: bold;
+}
+#cadastroPacienteLabel{
     text-align: center;
     font-size: 15px;
     font-weight: bold;
+}
+#cadastroMedicoLabel{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+#acessoPacienteLabel{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+#acessoMedicoLabel{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+#acessoPaciente .modal-body{
+    background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+    background-color: (rgb(0, 160, 255));
+	width: 100%;
+}
+#acessoMedico .modal-body{
+    background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+    background-color: (rgb(0, 160, 255));
+	width: 100%;
 }

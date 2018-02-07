@@ -184,10 +184,10 @@
                                 <input type="text" class="form-control" id="medicoDataNascimento" placeholder="Data de nascimento do paciente">
                             </div>
                 
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label for="medicoCPF">CPF:</label>
                                 <input type="text" class="form-control" id="medicoCPF" placeholder="4 ultimos digitos do CPF">
-                            </div>
+                            </div> -->
                 
                             <div class="form-group">
                                 <label for="medicoEmail">E-mail:</label>
@@ -254,7 +254,7 @@
                         <form action="#">
                             <div class="form-group col-md-12">
                                 <label for="pacienteNome">Nome Completo:</label>
-                                <input type="text" class="form-control" name="pacienteNome" id="pacienteNome" placeholder="Nome completo do paciente">
+                                <input type="text" class="form-control" name="pacienteNome" id="pacienteNome" placeholder="Nome completo do paciente" required>
                             </div>  
                             <div class="form-group col-md-4">
                                 <label for="pacienteRG">RG:</label>
@@ -262,7 +262,7 @@
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="pacienteCPF">CPF:</label>
-                                <input type="text" class="form-control" name="pacienteCPF" id="pacienteCPF" placeholder="4 ultimos digitos do CPF, só número">
+                                <input type="text" class="form-control" name="pacienteCPF" id="pacienteCPF" placeholder="4 ultimos digitios do CPF, só número" required>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="pacienteCartaoSUS">C. SUS:</label>
@@ -270,7 +270,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="pacienteDataNascimento">Data Nascimento:</label>
-                                <input type="date" class="form-control" name="pacienteDataNascimento" id="pacienteDataNascimento" placeholder="Data de nascimento do paciente">
+                                <input type="date" class="form-control" name="pacienteDataNascimento" id="pacienteDataNascimento" placeholder="Data de nascimento do paciente" required>
                             </div>               
                             <div class="form-group col-md-6">
                                 <label for="pacienteIdade">Idade:</label>
@@ -324,17 +324,23 @@
                                 <label for="pacienteTelefoneCelular">Celular:</label>
                                 <input type="text" class="form-control" name="pacienteTelefoneRes" id="pacienteTelefoneCelular" placeholder="Celular" required>
                             </div>        
-
-                            <!-- <p>
-                                --------------------------------------------------------------------------------------
-                            </p> -->   
                             <div class="form-group">
                                 <label for="pacienteEtnia">Etnia:</label>
-                                <input type="text" class="form-control" id="pacienteEtnia" placeholder="Bairro onnde mora">
+                                <select name="" id="" class="form-control">
+                                    <option value=""></option>
+                                    <option value="Branco">Branco</option>
+                                    <option value="Negro">Negro</option>
+                                    <option value="Indígena">Indígena</option>
+                                    <option value="Pardo">Pardo</option>
+                                </select>                               
                             </div>                      
-                            <div class="form-group">
+                            <div class="form-group">                               
                                 <label for="pacienteSexo">Sexo:</label>
-                                <input type="text" class="form-control" id="pacienteSexo" placeholder="Sexo">
+                                <select name="" id="" class="form-control">
+                                    <option value=""></option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Feminino">Feminino</option>
+                                </select>                               
                             </div>                                                                                                    
                             <div class="form-group">
                                 <label for="pacienteEmail">E-mail:</label>
@@ -347,7 +353,8 @@
                     </div>
                 </div>
             </div>
-    
+        </div>
+
             <!--Modal Cadastro Médico-->
         <div class="modal fade" id="cadastroMedico" tabindex="-1" role="dialog" aria-labelledby="cadastroMedicoLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
