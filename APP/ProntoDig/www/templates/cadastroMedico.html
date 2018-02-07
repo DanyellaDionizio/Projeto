@@ -1,19 +1,20 @@
-<ion-view view-title="Login">
+<ion-view view-title="Cadastro Médico">
     <ion-content class="padding">
   
         <div class="list">
           <label class="item item-input">
-            <span class="input-label">Login</span>
-            <input type="text" ng-model="login">
+            <input type="text" placeholder="Nome Completo do Profissional">
           </label>
           <label class="item item-input">
-            <span class="input-label">Senha</span>
-            <input type="password" ng-model="senha">
+            <input type="text" placeholder="E-mail do Profissional">
+          </label>
+          <label class="item item-input">
+            <input type="text" placeholder="Cadastro do Profissional - CRM, CRFa">
           </label>
         </div>
   
-        <button class="button button-block button-positive" ng-click="entrar(login, senha)">
-          Salvar
+        <button class="button button-block button-positive" ng-click="">
+          Cadastrar
         </button>
   
     </ion-content>
