@@ -2,6 +2,10 @@ html{
     margin: 0;
     padding: 0;
     margin-top: -20px;
+   
+}
+
+*{ font-family: 'Source Sans Pro', sans-serif;
 }
 
 nav{
@@ -22,7 +26,6 @@ nav{
 .navbar-inverse .navbar-nav>li>a{
     font-size: 18px;
     color: rgb(8, 81, 190);
-/
 }
 
 header{
@@ -104,12 +107,31 @@ footer ul li {
     display: inline-block;
 }
 
+#acessoMedico .modal-body{
+    background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+    background-color: (rgb(0, 160, 255));
+	width: 100%;
+}
+
+#acessoPaciente .modal-body{
+    background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+    background-color: (rgb(0, 160, 255));
+	width: 100%;
+}
 
 #cadastroPaciente .modal-body{
     background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
     background-color: (rgb(0, 160, 255));
 	width: 100%;
 }
+
+#cadastroMedico .modal-body{
+        background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+    background-color: (rgb(0, 160, 255));
+	width: 100%;
+
+}
+
 
 .carousel-tamanho{
     width: 60%;
@@ -131,8 +153,19 @@ footer ul li {
     width: 210px;
 }
 
-#dadosPessoais{
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
+.contato{
+    padding: 50px 0px;
+    background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+    background-color: (rgb(0, 160, 255));
+	width: 100%;
+
+}
+
+.form-contato{
+    margin: auto;
+    width: 338px;
+}
+
+.entreContato{
+text-align: center;
 }
