@@ -1,20 +1,21 @@
 <html>
 
-  <head>
+<head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <title>ProntoDigi.</title>
 
-  </head>
+</head>
 
-  <body id="inicio">
+<body id="inicio">
 
-        <nav class="menu">
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
+    <nav class="menu">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
                 <div class="navbar-header">
                 </div>
                 <a class="navbar-brand" href="#">
@@ -22,155 +23,235 @@
                 </a>
 
                 <div>
-                <ul class="nav navbar-nav navbar-right indice">
-                    <li><a class="nav-link js-scroll-trigger data-toggle="tooltip" title="TESTE HOME" " href="#inicio"> Home </a></li>
-                    <li><a class="nav-link js-scroll-trigger  data-toggle="popover" title="TESTE SOBRE" data-content="ESPERO QUE DE CERTO !" " href="#about"> Sobre </a></li>
-                    <li><a class="nav-link js-scroll-trigger"  href="#down"> Download </a></li>
-                    <li><a class="nav-link js-scroll-trigger"  href="#"> | </a></li>
-                
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastrar
-                        <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                        <li><a href="#" data-toggle="modal" data-target="#cadastroMedico">Médico</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#cadastroPaciente">Paciente</a></li>
-                        </ul>
+                    <ul class="nav navbar-nav navbar-right indice">
+                        <li>
+                            <a class="nav-link js-scroll-trigger data-toggle=" tooltip " title=" HOME " " href="#inicio">
+                                Home </a>
+                        </li>
+                        <li>
+                            <a class="nav-link js-scroll-trigger  data-toggle=" popover " title=" SOBRE " data-content="
+                                " " href="#about"> Sobre </a>
+                        </li>
+                        <li>
+                            <a class="nav-link js-scroll-trigger" href="#down"> Download </a>
+                        </li>
+                        <li>
+                            <a class="nav-link js-scroll-trigger" href="#"> | </a>
+                        </li>
 
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Entrar
-                        <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                        
-                        <li><a href="#" data-toggle="modal" data-target="#acessoMedico">Médico</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#acessoPaciente">Paciente</a></li>
-                    </li>
-                </ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastrar
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#cadastroMedico">Médico</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#cadastroPaciente">Paciente</a>
+                                </li>
+                            </ul>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Entrar
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a href="#" data-toggle="modal" data-target="#acessoMedico">Médico</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-toggle="modal" data-target="#acessoPaciente">Paciente</a>
+                                    </li>
+                            </li>
+                            </ul>
                 </div>
-            </nav>     
         </nav>
+    </nav>
 
-        <header id="topo">
+    <header id="topo">
         <div class="texto-plataforma">
-           <h3><b>ProntoDigi. é uma plataforma onde você pode ter acesso ao seu prontuário médico quando quiser.</b></h3>
-         </div>
+            <h3>
+                <b>ProntoDigi. é uma plataforma onde você pode ter acesso ao seu prontuário médico quando quiser.</b>
+            </h3>
+        </div>
 
         <div id="carousel-example-generic" class="carousel slide carousel-tamanho" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
             </ol>
-          
+
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img src="img/doctor.jpeg" alt="...">
-                <div class="carousel-caption">
-                    Médico
+                <div class="item active">
+                    <img src="img/doctor.jpeg" alt="...">
+                    <div class="carousel-caption">
+                        Médico
+                    </div>
                 </div>
-              </div>
-              <div class="item">
-                <img src="img/soon.jpeg" alt="...">
-                <div class="carousel-caption">
-                    Filho
+                <div class="item">
+                    <img src="img/soon.jpeg" alt="...">
+                    <div class="carousel-caption">
+                        Filho
+                    </div>
                 </div>
-              </div>
-              <div class="item">
-                <img src="img/mom.jpeg" alt="...">
-                <div class="carousel-caption">
-                    Mãe
+                <div class="item">
+                    <img src="img/mom.jpeg" alt="...">
+                    <div class="carousel-caption">
+                        Mãe
+                    </div>
                 </div>
-              </div>
-              <div class="item">
-                <img src="img/idoso.jpg" alt="...">
-                <div class="carousel-caption">
-                  Idoso
+                <div class="item">
+                    <img src="img/idoso.jpg" alt="...">
+                    <div class="carousel-caption">
+                        Idoso 
+                    </div>
                 </div>
-              </div>
-              <div class="item">
-                <img src="img/exames.jpeg" alt="...">
-                <div class="carousel-caption">
-                  Exames
+                <div class="item">
+                    <img src="img/exames.jpeg" alt="...">
+                    <div class="carousel-caption">
+                        Exames
+                    </div>
                 </div>
-              </div>
             </div>
-          
+
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
             </a>
-          </div>
-        
-        </header>
-            
-        <section id="about" class="sobre">
+        </div>
 
-            <div  class="row simGif">
-                  <img src="img/simGif.gif" alt="" width="200px" height="200px">
+    </header>
+
+    <section id="about" class="sobre">
+
+        <div class="row simGif">
+            <img src="img/simGif.gif" alt="" width="200px" height="200px">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-ms-12 col-xs-12">
+                    <h3>
+                        <b>Já imaginou ter acesso a todo o seu prontuário médico em apenas alguns clicks? </b>
+                    </h3>
+                    <br/>
+                    <h4>
+                        <b>Conheça o ProntoDigi, uma plataforma completa que permite que você tenha acesso ao seu prontuário
+                            médico no seu celular!</b>
+                    </h4>
+                </div>
+
+                <div class="col-lg-3 col-md-12 col-ms-12 col-xs-12">
+                    <h3>
+                        <b>O que o médico explicou mesmo?</b>
+                    </h3>
+                    <h4>
+                        <b>Com seu prontuário em mãos você vai entender aqueles termos médicos que são complicados de entender.</b>
+                    </h4>
+                </div>
+                <div class="col-lg-3 col-md-12 col-ms-12 col-xs-12">
+                    <h3>
+                        <b>Esqueci o nome do medicamento que devo tomar, e agora?</b>
+                    </h3>
+                    <h4>
+                        <b>Com o prontoDigi. você nao terá mais problema em esquecer o nome, vai estar no seu prontuário!</b>
+                    </h4>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-12 col-ms-12 col-xs-12">
-                        <h3><b>Já imaginou ter acesso a todo o seu prontuário médico em apenas alguns clicks? </b></h3>
-                        <br/>
-                        <h4><b>Conheça o ProntoDigi, uma plataforma completa que permite que você tenha acesso 
-                                ao seu prontuário médico no seu celular!</b></h4>
-                     </div>
+    <section id="down" class="download">
+        <div class="container">
+            <h2 class="center">Faça o download aqui!</h2>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
+                    <img src="img/google-play-badge.svg" alt="Google Play">
+                </div>
+                <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
+                    <img src="img/app-store-badge.svg" alt="App Store">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contato">
+        <h2 class="entreContato">Entre em contato conosco!</h2>
+        <form class="form-contato" action="" method="">
+            <input type="hidden" name="recipient" value="">
+            <!-- Pode ser qualquer endereço de email -->
+            <input type="hidden" name="redirect" value="">
+            <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+            <input type="hidden" name="subject" value="">
+            <!-- Assunto da mensagem -->
+            <input type="hidden" name="email" value="">
+            <!-- Deve ser uma conta de email ativa em seu domínio -->
+
+            <p>
+                Nome:
+                <br />
+                <input type="text" size="50" name="nome">
+            </p>
+
+            <p>
+                E-mail:
+                <br />
+                <input type="text" size="50" name="replyto">
+            </p>
+
+            <p>
+                Comentários:
+                <br />
+                <textarea name="Comentarios" id="" cols="50" rows="5"></textarea>
                 
-                    <div class="col-lg-3 col-md-12 col-ms-12 col-xs-12">
-                        <h3><b>O que o médico explicou mesmo?</b></h3><h4><b>Com seu prontuário em mãos você vai entender aqueles termos médicos que são complicados de entender.</b></h4>
-                    </div>
-                    <div class="col-lg-3 col-md-12 col-ms-12 col-xs-12">
-                         <h3><b>Esqueci o nome do medicamento que devo tomar, e agora?</b></h3><h4><b>Com o prontoDigi. você nao terá mais problema em esquecer o nome, vai estar no seu prontuário!</b></h4>
-                    </div>
-                </div>
+            </p>
+
+            <p>
+                <input type="submit" size="15" name="BTEnvia" value="Enviar">
+
+        </form>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li>
+                        <img src="img/icone-twitter.ico" alt="" width="32px" height="32px">
+                    </li>
+                    <li>
+                        <img src="img/icone-face.ico" alt="" width="32px" height="32px">
+                    </li>
+                    <li>
+                        <img src="img/icone-google.ico" alt="" width="32px" height="32px">
+                    </li>
+                </ul>
             </div>
-        </section>
+        </div>
+    </footer>
 
-        <section id="down" class="download">
-            <div class="container">
-                <h2 class="center">Faça o download aqui!</h2>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
-                        <img src="img/google-play-badge.svg" alt="Google Play">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-ms-12 col-xs-12">
-                        <img src="img/app-store-badge.svg" alt="App Store">
-                    </div>
-                </div>
-            </div>                        
-        </section>  
-
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <ul>
-                        <li><img src="img/icone-twitter.ico" alt="" width="32px" height="32px"></li>
-                        <li><img src="img/icone-face.ico" alt="" width="32px" height="32px"></li>
-                        <li><img src="img/icone-google.ico" alt="" width="32px" height="32px"></li>
-                    </ul>
-                </div>
-            </div>    
-        </footer>
-
-        <!--Modal Acesso Médico-->
-        <div class="modal fade" id="acessoMedico" tabindex="-1" role="dialog" aria-labelledby="acessoMedicoLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
+    <!--Modal Acesso Médico-->
+    <div class="modal fade" id="acessoMedico" tabindex="-1" role="dialog" aria-labelledby="acessoMedicoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
                     <h5 class="modal-title" id="acessoMedicoLabel">Acesso Médico</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
+
                     </div>
                     <div class="modal-body">
                         <form>
@@ -196,58 +277,86 @@
                         </form>
                     </div>
                     <div class="modal-footer">
+=======
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="medicoNome">Nome Completo:</label>
+                            <input type="text" class="form-control" id="medicoNome" placeholder="Nome completo do paciente">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="medicoDataNascimento">Data Nascimento:</label>
+                            <input type="text" class="form-control" id="medicoDataNascimento" placeholder="Data de nascimento do paciente">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="medicoCPF">CPF:</label>
+                            <input type="text" class="form-control" id="medicoCPF" placeholder="4 ultimos digitos do CPF">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="medicoEmail">E-mail:</label>
+                            <input type="email" class="form-control" id="medicoEmail" placeholder="e-mail medico">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+>>>>>>> 8c26aa9dd7fdb700e3d8be7b9090617f0ccf1a0d
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                     <button type="button" class="btn btn-primary">Entrar</button>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--Modal Acesso Paciente-->
-        <div class="modal fade" id="acessoPaciente" tabindex="-1" role="dialog" aria-labelledby="acessoPacienteLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="acessoPacienteLabel">Acesso Paciente</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+    <!--Modal Acesso Paciente-->
+    <div class="modal fade" id="acessoPaciente" tabindex="-1" role="dialog" aria-labelledby="acessoPacienteLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="acessoPacienteLabel">Acesso Paciente</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="pacienteNome">Nome Completo:</label>
+                            <input type="text" class="form-control" id="pacienteNome" placeholder="Nome completo do paciente">
                         </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="pacienteNome">Nome Completo:</label>
-                                    <input type="text" class="form-control" id="pacienteNome" placeholder="Nome completo do paciente">
-                                </div>
-                    
-                                <div class="form-group">
-                                    <label for="pacienteDataNascimento">Data Nascimento:</label>
-                                    <input type="text" class="form-control" id="pacienteDataNascimento" placeholder="Data de nascimento do paciente">
-                                </div>
-                    
-                                <div class="form-group">
-                                    <label for="pacienteCPF">CPF:</label>
-                                    <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
-                                </div>
-                            </form>
+
+                        <div class="form-group">
+                            <label for="pacienteDataNascimento">Data Nascimento:</label>
+                            <input type="text" class="form-control" id="pacienteDataNascimento" placeholder="Data de nascimento do paciente">
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-primary">Entrar</button>
+
+                        <div class="form-group">
+                            <label for="pacienteCPF">CPF:</label>
+                            <input type="text" class="form-control" id="pacienteCPF" placeholder="4 ultimos digitos do CPF">
                         </div>
-                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Entrar</button>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!--Modal Cadastro Paciente-->
-        <div class="modal fade" id="cadastroPaciente" tabindex="-1" role="dialog" aria-labelledby="cadastroPacienteLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
+    <!--Modal Cadastro Paciente-->
+    <div class="modal fade" id="cadastroPaciente" tabindex="-1" role="dialog" aria-labelledby="cadastroPacienteLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
                     <h5 class="modal-title" id="cadastroPacienteLabel">Cadastro Paciente</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
+
                     </div>
                     <div class="modal-body">
                         <P id="dadosPessoais">Dados Pessoais</P>
@@ -347,23 +456,24 @@
                                 <input type="text" class="form-control" id="pacienteEmail" placeholder="Email">
                             </div>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                            <button type="submit" class="btn btn-primary">Cadastrar</button>
-                                                        
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>                                      
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+          
 
-            <!--Modal Cadastro Médico-->
+        <!--Modal Cadastro Médico-->
+
         <div class="modal fade" id="cadastroMedico" tabindex="-1" role="dialog" aria-labelledby="cadastroMedicoLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <h5 class="modal-title" id="cadastroMedicoLabel">Cadastro Profissional</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                        <h5 class="modal-title" id="cadastroMedicoLabel">Cadastro Profissional</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -371,12 +481,12 @@
                                 <label for="medicoNome">Nome Completo:</label>
                                 <input type="text" class="form-control" id="medicoNome" placeholder="Nome completo do paciente">
                             </div>
-                
+
                             <div class="form-group">
                                 <label for="medicoEmail">E-mail:</label>
                                 <input type="email" class="form-control" id="medicoEmail" placeholder="Informe o E-mail">
                             </div>
-                
+
                             <div class="form-group">
                                 <label for="medicoCRM">Número cadastro profissional:</label>
                                 <input type="text" class="form-control" id="medicoCRM" placeholder="Exemplo: CRM, CRFA...">
@@ -384,18 +494,18 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Cadastrar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Cadastrar</button>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="js/script.js" ></script>
-        <script src="js/scroll.js" ></script>
-        
-    </body>
+        <script src="js/script.js"></script>
+        <script src="js/scroll.js"></script>
+
+</body>
 
 </html>
