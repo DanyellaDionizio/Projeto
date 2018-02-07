@@ -194,7 +194,6 @@ footer ul li {
     background-color: (rgb(0, 160, 255));
 	width: 100%;
 }
-
 .contato{
     padding: 50px 0px;
     background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
@@ -202,13 +201,16 @@ footer ul li {
 	width: 100%;
 
 }
-
 .form-contato{
     margin: auto;
     width: 338px;
 }
-
 .entreContato{
 text-align: center;
 }
-
+/* body{
+    background-image: url(../img/bg-pattern.png)
+} */
+body{
+    background-image: url(../img/banner.jpg) no-repeat;
+}
