@@ -57,23 +57,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 
   .state('cadastroPaciente', {
-    url: '/paciente',
+    url: '/cadPaciente',
     templateUrl: 'templates/cadastroPaciente.html',
     controller: 'pacienteCtrl'
   })
 
   .state('cadastroMedico', {
-    url: '/medico',
+    url: '/cadMedico',
     templateUrl: 'templates/cadastroMedico.html',
     controller: 'medicoCtrl'
   })
 
-  .state('tab.account', {
-    url: '/account',
+  .state('tab.set', {
+    url: '/set',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-set': {
+        templateUrl: 'templates/tab-set.html',
+        controller: 'setCtrl'
       }
     }
   });

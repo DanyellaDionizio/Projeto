@@ -6,11 +6,7 @@ angular.module('starter.controllers', [])
 
 .controller('pacienteCtrl', function($scope) {})
 
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
-})
+.controller('setCtrl', function($scope) {})
 
 .controller('LoginCtrl', function($scope, $state){
   let usuariosAcessoMedico = [
@@ -31,7 +27,7 @@ angular.module('starter.controllers', [])
   ];
 
   $scope.entrar = (login, senha) =>{
-    for(let usuario of usuariosAcesso){
+    for(let usuario of usuariosAcessoMedico){
       if(login == usuario.login && senha == usuario.senha){
         $state.go('tab.dash')
       }else{
@@ -40,14 +36,15 @@ angular.module('starter.controllers', [])
     }
   }
 
+  $scope.cadMed = () => {
+    $state.go('cadastroMedico')
+  }
+
   $scope.mostrarMed = false;
   $scope.entrarMedico = () => {
       $scope.mostrarMed = !$scope.mostrarMed;
       $scope.mostrarPac = false;
-  }
-
-  $scope.esconderMed = () => {
-    $scope.entrarPaciente = true;
+      $scope.mostrarCad = false;
   }
 
   $scope.mostrarPac = false;
@@ -56,4 +53,11 @@ angular.module('starter.controllers', [])
       $scope.mostrarMed = false;
   }
 
+  $scope.mostrarCad = false;
+  $scope.pagCadastro = () =>{
+    $scope.mostrarCad = !$scope.mostrarCad;
+
+  }
+
 });
+
