@@ -67,6 +67,7 @@ angular.module('starter.controllers', [])
   $scope.entrarPaciente = () => {
       $scope.mostrarPac = !$scope.mostrarPac;
       $scope.mostrarMed = false;
+      $scope.mostrarCad = false;
   }
 
   $scope.mostrarCad = false;
