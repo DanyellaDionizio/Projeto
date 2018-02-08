@@ -1,28 +1,71 @@
 <ion-view view-title="Cadastro Paciente">
-    <ion-content class="padding">
+    <ion-content class="padding cadPac">
   
+
       <div class="list">
-        <label class="item item-input">
-          <input type="text" placeholder="Nome Completo do Profissional">
-        </label>
-        <label class="item item-input">
-          <input type="text" placeholder="E-mail do Profissional">
-        </label>
-        <label class="item item-input">
-          <input type="text" placeholder="Cadastro do Profissional - CRM, CRFa">
-        </label>
-          <label class="item item-input">
-            <input type="text" placeholder="Nome Completo do Profissional">
-          </label>
-          <label class="item item-input">
-            <input type="text" placeholder="E-mail do Profissional">
-          </label>
-          <label class="item item-input">
-            <input type="text" placeholder="Cadastro do Profissional - CRM, CRFa">
+        <div class="row inputForm">
+          <label class="item item-input col-90 inputDet">
+            <input type="text" placeholder="Nome Completo do Paciente">
           </label>
         </div>
+        <div class="row inputForm">
+          <label class="item item-input col-40  inputDet">
+            <input type="text" placeholder="R.G.">
+          </label>
+          <label class="item item-input col-40 col-offset-10  inputDet ">
+            <input type="text" placeholder="CPF">
+          </label>
+        </div>
+        <div class="row inputForm">
+          <label class="item item-input col-60 inputDet">
+            <input type="text" placeholder="Data de Nascimento">
+          </label>
+          <label class="item item-input col-30 col-offset-10 inputDet">
+            <input type="text" placeholder="Idade">
+          </label>
+        </div>
+        <div class="row inputForm">
+          <label class="item item-input col-40 inputDet">
+            <input type="text" placeholder="CEP">
+          </label>
+          <label class="item item-input col-20 col-offset-10 inputDet">
+              <input type="text" placeholder="Nº">
+          </label>
+        </div>
+        <div class="row inputForm">
+          <label class="item item-input col-90 inputDet">
+            <input type="text" placeholder="Endereço">
+          </label>
+        </div>
+        <div class="row inputForm">
+          <label class="item item-input col-30 inputDet">
+            <input type="text" placeholder="Bairro">
+          </label>
+          <label class="item item-input col-30 col-offset-10 inputDet">
+            <input type="text" placeholder="Cidade">
+          </label>
+          <label class="item item-input col-30 col-offset-10 inputDet">
+            <input type="text" placeholder="Estado">
+          </label>
+        </div>
+        <div class="row inputForm">
+          <label class="item item-input col-70 inputDet">
+            <input type="text" placeholder="Telefone Residencial">
+          </label>
+        </div>
+        <div class="row inputForm">
+          <label class="item item-input col-70 inputDet">
+            <input type="text" placeholder="Telefone Celular">
+          </label>
+        </div>
+        <div class="row inputForm">
+          <label class="item item-input col-90 inputDet">
+            <input type="text" placeholder="E-mail">
+          </label>
+        </div>
+        
   
-        <button class="button button-block button-positive" ng-click="">
+        <button class="button button-block button-positive botaoCadPac" ng-click="">
           Cadastrar
         </button>
   
