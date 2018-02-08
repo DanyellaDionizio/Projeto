@@ -1,4 +1,4 @@
-<ion-view view-title="Tela Inicial">
+<ion-view hide-nav-bar="true">
     <ion-content class="padding">
   
         <img class="full-image" src="/img/Sim.gif" width="10" height="300" alt="">
@@ -27,11 +27,9 @@
             <div>
                 <button class="button button-full button-light" ng-click="pagCadastro()"> Cadastrar</button>
                     <div class="button-bar" ng-show="mostrarCad">
-                        <a class="button button-full button-light" href="/cadMedico">Medico</a>
-                        <a class="button button-full button-light" ng-click="cadPac()" href="/cadPaciente">Paciente</a>
+                        <a class="button button-full button-light" ng-click="cadMed()">Medico</a>
+                        <a class="button button-full button-light" ng-click="cadPac()">Paciente</a>
                     </div>
             </div>
-
-
     </ion-content>
   </ion-view>
