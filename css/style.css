@@ -208,9 +208,12 @@ footer ul li {
 .entreContato{
 text-align: center;
 }
-/* body{
-    background-image: url(../img/bg-pattern.png)
-} */
+
 body{
     background-image: url(../img/banner.jpg) no-repeat;
+}
+
+.comoFunciona{
+    height: 300px;
+    position: relative;
 }
