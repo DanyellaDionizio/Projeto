@@ -1,1 +1,37 @@
 /* Empty. Add your own CSS if you like */
+.image{
+    height: 200px;
+    width: 268px;
+    padding-left: 68px;
+}
+
+.btnMedInto{
+    border-radius: 40px;
+    background: linear-gradient(to left, #ffffff, rgba(0, 162, 255, 0.123));
+    border-color: #0000004b;
+}
+
+.inputForm{
+    padding: 15px 2px;
+}
+
+.inputDet{
+    border-radius: 40px;
+    background: linear-gradient(to left, #ffffff, rgba(0, 162, 255, 0.123));
+    border-color: #0000004b;
+}
+
+.cadPac{
+    background: linear-gradient(to right, #ffffff, rgba(0, 162, 255, 0.541));
+}
+
+.botaoCadPac{
+    border-radius: 40px;
+}
+
+.inputDetMed{
+    border-radius: 40px;
+    background: linear-gradient(to left, #ffffff, rgba(0, 162, 255, 0.123));
+    border-color: #0000004b;
+    margin: 10px;
+}
