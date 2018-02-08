@@ -2,13 +2,25 @@ angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
 
-.controller('medicoCtrl', function($scope) {})
+.controller('medicoCtrl', function($scope, medicoService) {
+  $scope.medico = {};
 
-.controller('pacienteCtrl', function($scope) {})
+  $scope.cadastrar = () => {
+    medicoService.cadastrar($scope.medico);
+  };
+})
+
+.controller('pacienteCtrl', function($scope, pacienteService) {
+  $scope.paciente = {};
+
+  $scope.cadastrar = () => {
+    pacienteService.cadastrar($scope.paciente);
+  };
+})
 
 .controller('setCtrl', function($scope) {})
 
-.controller('LoginCtrl', function($scope, $state){
+.controller('LoginCtrl', function($scope, $state, $location, medicoService, pacienteService){
   let usuariosAcessoMedico = [
     {
       nomePaciente: '',
@@ -34,6 +46,10 @@ angular.module('starter.controllers', [])
         $scope.erro = true;
       }
     }
+  }
+
+  $scope.cadPac = () => {
+    $state.go('cadastroPaciente');
   }
 
   $scope.cadMed = () => {

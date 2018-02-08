@@ -3,17 +3,17 @@
   
         <div class="list inputForm">
           <label class="item item-input inputDetMed">
-            <input type="text" placeholder="Nome Completo do Profissional">
+            <input type="text" placeholder="Nome Completo do Profissional" ng-model="medico.nome">
           </label>
           <label class="item item-input inputDetMed">
-            <input type="text" placeholder="E-mail do Profissional">
+            <input type="text" placeholder="E-mail do Profissional" ng-model="medico.email">
           </label>
           <label class="item item-input inputDetMed">
-            <input type="text" placeholder="Cadastro do Profissional - CRM, CRFa">
+            <input type="text" placeholder="Cadastro do Profissional - CRM, CRFa" ng-model="medico.crm">
           </label>
         </div>
   
-        <button class="button button-block button-positive botaoCadPac" ng-click="">
+        <button class="button button-block button-positive botaoCadPac" ng-click="cadastrar()">
           Cadastrar
         </button>
   
